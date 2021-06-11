@@ -1,0 +1,128 @@
+.tabs-menu ul li {
+	a {
+		padding: 8px 20px 8px 20px;
+		display: block;
+		background: $white;
+		margin-right: 5px;
+		border-radius: 5px;
+		border: 1px solid #e0e5f3;
+		font-weight: 500;
+	}
+	.active {
+		color: $white;
+		border-radius: 5px;
+		display: block;
+	}
+}
+
+.tabs-menu1 ul li {
+	a {
+		padding: 10px 20px 11px 20px;
+		display: block;
+		background: $white;
+		border: 1px solid #e0e5f3;
+		border-radius: 3px;
+		margin-right: 2px;
+	}
+	.active {
+		border-radius: 2px;
+		background: $white;
+	}
+}
+
+.tabs-menu-body {
+	padding: 15px;
+	border: 1px solid #e0e5f3;
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.tab-menu-heading {
+	padding: 20px;
+	border: 1px solid #e0e5f3;
+	border-bottom: 0;
+}
+
+.tab_wrapper {
+	.content_wrapper .tab_content.active p:last-child {
+		margin-bottom: 0;
+	}
+	>ul {
+		li {
+			border: 1px solid #e0e5f3;
+			border-top: 3px solid #e0e5f3;
+		}
+		border-bottom: 1px solid #e0e5f3;
+	}
+	&.right_side {
+		.content_wrapper {
+			border: 1px solid #e0e5f3;
+		}
+		>ul {
+			li {
+				&.active {
+					border-color: #e0e5f3;
+				}
+				&:after {
+					background: #e0e5f3;
+				}
+			}
+			border-bottom: 1px solid #e0e5f3;
+		}
+	}
+}
+
+@media (min-width: 767px) {
+	.tab-content #tab-11 {
+		.item-card9-img {
+			.item-card9-imgs a i {
+				top: 26%;
+			}
+			width: 400px;
+		}
+		.item-card9-imgs img,
+		.item-card2-img img,
+		.item-card9-img .carousel img {
+			height: 197px;
+		}
+	}
+	.h-197 {
+		height: 197px;
+	}
+	.tab-content #tab-12 .card .card {
+		border-radius: 0 0 5px 5px;
+	}
+}
+
+.ads-tabs .tabs-menus {
+	margin-bottom: 2rem;
+	ul li {
+		a {
+			border: 1px solid #e0e5f3;
+			color: #3f3e50;
+		}
+		margin-right: 1rem;
+		&:last-child {
+			margin-right: 0;
+		}
+		a {
+			padding: 10px 20px 11px 20px;
+			border-radius: 4px;
+			background: #f7f7fb;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.tabs-menu1 ul li a {
+		display: block;
+		width: 100%;
+		border: 1px solid #e0e5f3;
+		margin: 1px;
+		border-radius: 2px;
+	}
+	.tab-content .tabs-menu1 ul li a {
+		width: auto;
+	}
+}

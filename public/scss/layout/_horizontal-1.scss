@@ -1,0 +1,67 @@
+.horizontal-main {
+	background: $black-3;
+}
+
+.horizontalMenu>.horizontalMenu-list,
+.horizontal-header {
+	background-color:transparent ;
+}
+
+.horizontalMenu>.horizontalMenu-list>li {
+	>a {
+		color: $white;
+		&.btn {
+			color: $white;
+			font-size: .85rem;
+		}
+		>.fa,
+		&.active .fa {
+			color: $white;
+		}
+	}
+	&:hover>a>.fa {
+		color: $white;
+	}
+	> {
+		a:hover .fa {
+			color: $white;
+		}
+		ul.sub-menu>li {
+			a i {
+				color: #333;
+			}
+			&:hover>a i {
+				color: $white;
+			}
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.horizontal-header .container {
+		position: relative;
+	}
+		
+	.horizontalMenu>.horizontalMenu-list,
+	.horizontal-header {
+		background-color:$white ;
+	}
+}
+
+.horizontal-main-1 {
+	background: transparent;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.horizontal-main.bg-primary {
+	.horizontalMenu-list li {
+		padding: 1.5rem 0;
+	}
+	.desktoplogo {
+		padding: 1.5rem 0.75rem;
+	}
+}
+
+.horizontalMenu>.horizontalMenu-list>li>a.btn:hover {
+	background: #fb9512;
+}

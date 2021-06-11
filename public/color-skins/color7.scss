@@ -1,0 +1,2044 @@
+/*------------------------------------------------------------------
+[Color7 Stylesheet]
+
+Project        :   Bizdire - Business Directory and classifieds premium html5 CSS template
+Version        :   V.1
+Create Date    :   19/02/20
+Last Update    :   19/02/20
+Copyright      :   Spruko Technologies Private Limited 
+Author         :   SprukoSoft
+Author URL     :   https://themeforest.net/user/sprukosoft
+Support		   :   support@spruko.com
+License        :   Licensed under ThemeForest License
+
+-------------------------------------------------------------------*/
+@import "../scss/variables";
+a {
+    &:hover {
+        color: $primary7;
+    }
+
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+.bg-background2:before,
+.pattern:before {
+    background: linear-gradient(87deg, rgba(4, 81, 88, 0.85), rgba(9, 131, 142, 0.85) 100%) !important;
+}
+
+.owl-controls .owl-page.active {
+    border-color: $secondary5;
+    opacity: 1;
+
+    &:hover {
+        border-color: $secondary5;
+        opacity: 1;
+    }
+}
+
+.owl-carousel:hover .owl-nav button {
+    color: $secondary5 !important;
+}
+
+.owl-nav button {
+    color: $primary7 !important;
+}
+
+a.bg-primary {
+
+    &:hover,
+    &:focus {
+        background-color: $primary7 !important;
+    }
+}
+
+button.bg-primary {
+
+    &:hover,
+    &:focus {
+        background-color: $primary7 !important;
+    }
+}
+
+.item-card7-overlaytext h4 {
+    background: $secondary5;
+}
+
+.bg-background-color:before {
+    background: linear-gradient(87deg, rgba(4, 81, 88, 0.85), rgba(9, 131, 142, 0.85) 100%) !important;
+}
+
+.bg-dark-purple {
+    background-color: #19181f !important;
+}
+
+.btn-secondary {
+    color: $white !important;
+    background-color: $secondary5;
+    border-color: $secondary5;
+
+    &:hover {
+        color: $white;
+        background-color: #cc245d;
+        border-color: #cc245d;
+    }
+
+    &:focus,
+    &.focus {
+        box-shadow: 0 0 0 2px rgba(236, 41, 107, 0.5);
+        background-color: $secondary5;
+        border-color: $secondary5;
+    }
+
+    &.disabled,
+    &:disabled {
+        color: $white;
+        background-color: $secondary5;
+        border-color: $secondary5;
+    }
+
+    &:not(:disabled):not(.disabled) {
+
+        &:active,
+        &.active {
+            color: $white;
+            background-color: $secondary5;
+            border-color: $secondary5;
+        }
+    }
+}
+
+.show>.btn-secondary.dropdown-toggle {
+    color: $white;
+    background-color: $secondary5;
+    border-color: $secondary5;
+}
+
+.btn-secondary:not(:disabled):not(.disabled) {
+
+    &:active:focus,
+    &.active:focus {
+        box-shadow: 0 0 0 2px rgba(233, 30, 99, 0.1);
+    }
+}
+
+.show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 2px rgba(233, 30, 99, 0.1);
+}
+
+.btn-outline-secondary {
+    color: $secondary5;
+    background-color: transparent;
+    background-image: none;
+    border-color: $secondary5 !important;
+
+    &:hover {
+        color: $white;
+        background-color: $secondary5;
+        border-color: $secondary5 !important;
+    }
+
+    &:focus,
+    &.focus {
+        box-shadow: 0 0 0 2px rgba(5, 117, 230, 0.1);
+    }
+
+    &.disabled,
+    &:disabled {
+        color: $secondary5;
+        background-color: transparent;
+    }
+
+    &:not(:disabled):not(.disabled) {
+
+        &:active,
+        &.active {
+            color: $white;
+            background-color: $secondary5;
+            border-color: $secondary5;
+        }
+    }
+}
+
+.show>.btn-outline-secondary.dropdown-toggle {
+    color: $white;
+    background-color: $secondary5;
+    border-color: $secondary5;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled) {
+
+    &:active:focus,
+    &.active:focus {
+        box-shadow: 0 0 0 2px rgba(5, 117, 230, 0.1);
+    }
+}
+
+.show>.btn-outline-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 2px rgba(5, 117, 230, 0.1);
+}
+
+.btn-link {
+    color: $primary7;
+}
+
+.alert-secondary {
+    color: #fcfdff;
+    background-color: $secondary5;
+    border-color: $secondary5;
+
+    hr {
+        border-top-color: #b7cded;
+    }
+
+    .alert-link {
+        color: #172b46;
+    }
+}
+
+.label-secondary {
+    background-color: $secondary5;
+}
+
+.badge-secondary {
+    color: $white;
+    background-color: $secondary5;
+
+    &[href] {
+
+        &:hover,
+        &:focus {
+            color: $white;
+            text-decoration: none;
+            background-color: $secondary5;
+        }
+    }
+}
+
+.bg-gradient-secondary {
+    background: linear-gradient(87deg, rgb(4, 81, 88), rgb(9, 131, 142) 100%) !important;
+}
+
+.bg-secondary {
+    background-color: $secondary5 !important;
+}
+
+a.bg-secondary {
+
+    &:hover,
+    &:focus {
+        background-color: $secondary5 !important;
+    }
+}
+
+button.bg-secondary {
+
+    &:hover,
+    &:focus {
+        background-color: $secondary5 !important;
+    }
+}
+
+.border-secondary {
+    border-color: $secondary5 !important;
+}
+
+.text-secondary {
+    color: $secondary5 !important;
+}
+
+a.text-secondary {
+
+    &:hover,
+    &:focus {
+        color: #cc245d !important;
+    }
+}
+
+.social-box.linkedin i {
+    background: $secondary5;
+}
+
+.checkbox span:after,
+.user-card .card-block .activity-leval li.active {
+    background-color: $secondary5;
+}
+
+#count-down .clock-presenter .digit {
+    background: $secondary5;
+}
+
+.masthead .masthead-bg {
+    background: linear-gradient(120deg, #0f75ff 0%, $secondary5 100%);
+}
+
+.notifyimg {
+    background: $secondary5;
+}
+
+.drop-icon-wrap .drop-icon-item:hover {
+    color: #605e7e;
+}
+
+.dropdown-item {
+
+    &:hover,
+    &:focus,
+    &.active,
+    &:active {
+        color: #605e7e;
+    }
+}
+
+.timeline__item:after {
+    border: 6px solid $secondary5;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: $primary7;
+}
+
+.custom-checkbox .custom-control-input {
+    &:checked~.custom-control-label::before {
+        background-color: $primary7;
+    }
+
+    &:indeterminate~.custom-control-label::before {
+        background-color: $secondary5;
+    }
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
+    background-color: $primary7;
+}
+
+.custom-select:focus {
+    border-color: $secondary5;
+}
+
+.custom-file-input:focus~.custom-file-label {
+    border-color: $secondary5;
+
+    &::after {
+        border-color: $secondary5;
+    }
+}
+
+.custom-file-label::after {
+    background-color: $primary7;
+    border-left: 1px solid $primary7;
+}
+
+.custom-range {
+
+    &::-webkit-slider-thumb,
+    &::-moz-range-thumb,
+    &::-ms-thumb {
+        background-color: $secondary5;
+    }
+}
+
+.nav-link.active {
+    background-color: $secondary5;
+}
+
+.nav-pills {
+
+    .nav-link.active,
+    .show>.nav-link {
+        background-color: $secondary5;
+    }
+}
+
+.page-link:hover {
+    color: $secondary5;
+}
+
+.page-item.active .page-link {
+    background-color: $secondary5;
+    border-color: $secondary5;
+}
+
+.range.range-secondary {
+    input[type="range"] {
+
+        &::-webkit-slider-thumb,
+        &::-moz-slider-thumb {
+            background-color: $secondary5;
+        }
+    }
+
+    output {
+        background-color: $secondary5;
+    }
+
+    input[type="range"] {
+        outline-color: $secondary5;
+    }
+}
+
+.nav-tabs .nav-item1 .nav-link {
+
+    &:hover:not(.disabled),
+    &.active {
+        background: $secondary5;
+    }
+}
+
+.panel.price>.panel-heading {
+    background: $secondary5;
+    color: $white;
+    background: $secondary5;
+}
+
+.heading-secondary {
+    background-color: $secondary5;
+}
+
+.page-header .breadcrumb-item a {
+    color: #605e7e;
+}
+
+.breadcrumb-item1 a:hover,
+.panel-title1 a {
+    color: $secondary5;
+}
+
+.header-bg {
+    background: #eef2f9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f9, $secondary5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f9, $secondary5);
+}
+
+.nav-tabs .nav-link {
+    &:hover:not(.disabled) {
+        color: $white;
+        background: $secondary5;
+    }
+
+    &.active {
+        background: #efeff5;
+    }
+}
+
+.navtab-wizard.nav-tabs .nav-link {
+
+    &.active,
+    &:hover {
+        color: $secondary5;
+        background: $white;
+    }
+}
+
+.admin-navbar {
+    .nav-item.active .nav-link {
+        color: $secondary5;
+
+        .icon {
+            color: $secondary5;
+        }
+    }
+
+    .nav-link {
+
+        &:hover,
+        &:focus,
+        &.active {
+            color: $secondary5;
+        }
+    }
+
+    .mega-dropdown .sub-item .section-label {
+        color: $secondary5;
+    }
+
+    .sub-item ul a {
+        &:active {
+            background-color: $secondary5;
+        }
+
+        &:hover,
+        &:focus {
+            color: $secondary5;
+            text-decoration: none;
+            background-color: #f9faff;
+        }
+    }
+}
+
+.expanel-secondary {
+    border: $secondary5 !important;
+
+    >.expanel-heading {
+        color: $white !important;
+        background-color: $secondary5 !important;
+        border-color: $secondary5 !important;
+    }
+}
+
+.error-img .form-control:focus {
+    color: $white;
+    background-color: $white-2;
+    border-color: $secondary5;
+}
+
+.avatar {
+    background: $secondary5 no-repeat center/cover;
+}
+
+.spinner {
+    background: linear-gradient(120deg, $secondary5 0%, $secondary5 100%);
+}
+
+.spinner-lg {
+    background-color: $secondary5;
+}
+
+.double-bounce1,
+.double-bounce2,
+.cube1,
+.cube2 {
+    background: linear-gradient(120deg, $secondary5 0%, $secondary5 100%);
+}
+
+.lds-heart div {
+    background: $secondary5;
+
+    &:after,
+    &:before {
+        background: $secondary5;
+    }
+}
+
+.lds-ring div {
+    border: 6px solid $secondary5;
+    border-color: $secondary5 transparent transparent transparent;
+}
+
+.lds-hourglass:after {
+    border: 26px solid $secondary5;
+    border-color: $secondary5 transparent;
+}
+
+.mediaicon {
+    border: 1px solid $secondary5;
+    background: $secondary5;
+}
+
+a.chip:hover {
+    background-color: $secondary5;
+}
+
+.highlight .s {
+    color: $secondary5;
+}
+
+.selectgroup-input {
+    &:checked+.selectgroup-button {
+        border-color: $secondary5;
+        z-index: 1;
+        color: $secondary5;
+        background: $white;
+    }
+
+    &:focus+.selectgroup-button {
+        border-color: $secondary5;
+        z-index: 2;
+        color: $secondary5;
+        box-shadow: 0 0 0 2px rgba(105, 99, 255, 0.25);
+    }
+}
+
+.custom-switch-input {
+    &:checked~.custom-switch-indicator {
+        background: $primary7;
+    }
+
+}
+
+.imagecheck-input:focus~.imagecheck-figure {
+    border-color: $secondary5;
+    box-shadow: 0 0 0 2px rgba(105, 99, 255, 0.25);
+}
+
+.imagecheck-figure:before {
+    background: $secondary5 url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E") no-repeat center (center / 50%) 50%;
+    color: $white;
+}
+
+.colorinput-input:focus~.colorinput-color {
+    border-color: $secondary5;
+    box-shadow: 0 0 0 2px rgba(105, 99, 255, 0.25);
+}
+
+.ui-datepicker .ui-datepicker-title {
+    color: $secondary5;
+}
+
+#back-to-top {
+    background: $secondary5;
+
+    &:hover {
+        background: $white;
+        color: $secondary5;
+        border: 2px solid $secondary5;
+    }
+}
+
+#chat-message {
+    background: linear-gradient(87deg, rgba(4, 81, 88, 0.85), rgba(9, 131, 142, 0.85) 100%) !important;
+}
+
+.tabs-menu ul li .active {
+    background: $secondary5;
+    border: 1px solid $secondary5;
+}
+
+.tabs-menu1 ul li .active {
+    border: 1px solid $secondary5;
+    color: $secondary5;
+}
+
+.profile-user-tabs li a.active {
+    background: #f7f7fb;
+    border: 1px solid #e0e5f3;
+    color: #605e7e;
+    border-radius: 3px;
+}
+
+.wideget-user-tab .tabs-menu1 ul li .active {
+    background: $white;
+    border: 1px solid #e0e5f3;
+    border-bottom: 0;
+}
+
+.rating-stars .rating-stars-container .rating-star {
+
+    &.is--active .fa-heart,
+    &.is--hover .fa-heart {
+        color: $secondary5;
+    }
+}
+
+.message-feed:not(.right) .mf-content {
+    background: $secondary5;
+    color: $white;
+
+    &:before {
+        border-right-color: $secondary5;
+    }
+}
+
+.msb-reply button {
+    background: $secondary5;
+}
+
+.wizard-card {
+    .moving-tab {
+        background-color: $secondary5 !important;
+    }
+
+    .choice {
+
+        &:hover .icon,
+        &.active .icon {
+            border-color: $secondary5 !important;
+            color: $secondary5 !important;
+        }
+    }
+}
+
+.cal1 .clndr {
+    .clndr-table {
+        .header-days {
+            background: $secondary5;
+        }
+
+        tr .day {
+
+            &.today.event,
+            &.my-today.event {
+                background: $secondary5;
+            }
+
+            &.today:hover,
+            &.my-today:hover {
+                background: $secondary5;
+                color: $white;
+            }
+        }
+    }
+
+    .clndr-controls .clndr-control-button {
+        .clndr-previous-button {
+            color: $secondary5;
+            background: #e6f2fe;
+        }
+
+        .clndr-next-button {
+            color: $secondary5;
+            background: #e6f2fe;
+
+            &:hover {
+                background: $secondary5;
+            }
+        }
+
+        .clndr-previous-button:hover {
+            background: $secondary5;
+        }
+    }
+}
+
+.fc button {
+    background: $secondary5;
+}
+
+.fc-event,
+.fc-event-dot {
+    background-color: $secondary5;
+    color: #f1f1f1 ! important;
+}
+
+#sidebar {
+    .accordion-toggle i {
+        background: linear-gradient(120deg, #0f75ff 60%, $secondary5 100%);
+    }
+
+    ul li.active>a {
+        color: $secondary5;
+
+        &:hover {
+            color: $secondary5;
+        }
+    }
+
+    li a[aria-expanded="true"].active:before {
+        background: linear-gradient(120deg, #0f75ff 60%, $secondary5 100%);
+    }
+
+    ul li a:hover,
+    .collapse li a:hover {
+        color: $secondary5;
+    }
+}
+
+.sweet-alert button {
+    background-color: $secondary5 !important;
+}
+
+.timeline__item:after {
+    border: 6px solid $secondary5;
+}
+
+.label-secondary.arrowed:before {
+    border-right-color: $secondary5;
+}
+
+.widgetdate p,
+.widgetbox p,
+.datebox p {
+    border-bottom: 2px solid $secondary5;
+}
+
+.arrow-ribbon.bg-secondary:before {
+    border-left: 15px solid $secondary5;
+}
+
+.arrow-ribbon2:before {
+    border-left: 24px solid $secondary5;
+}
+
+.badge-offer.bg-secondary:after,
+.badge-offer1.bg-secondary:after {
+    border-top: 12px solid $secondary5;
+}
+
+.social-icons li:hover {
+    background: $secondary5;
+    color: $white;
+}
+
+.social li a:hover,
+.footer-main a:hover,
+.footer-links a:hover {
+    color: $secondary5;
+}
+
+.product-tags li a:hover {
+    background: $secondary5;
+    border-color: $secondary5;
+}
+
+.info .counter-icon {
+    border: 1px solid $white-6;
+
+    i {
+        color: $white;
+    }
+}
+
+.counter-icon {
+    border: 1px solid $secondary5;
+
+    i {
+        color: $secondary5;
+    }
+}
+
+.header-links li a {
+
+    &.active,
+    &:hover {
+        background: $secondary5;
+        color: $white;
+    }
+}
+
+.card-pay .tabs-menu li a.active {
+    background: #f7f7fb;
+}
+
+.item1-tabs-menu ul li .active {
+    background: $secondary5;
+}
+
+.items-blog-tab-heading .items-blog-tab-menu li .active {
+    background: $secondary5;
+    border: 1px solid $secondary5;
+    color: $white;
+}
+
+.item2-gl-nav .item2-gl-menu li .active {
+    color: $secondary5;
+}
+
+.item-all-cat {
+    .item-all-card:hover .item-all-text h5 {
+        color: $secondary5 !important;
+    }
+
+    .category-type .item-all-card img {
+        background: linear-gradient(120deg, $primary7 0%, $primary7 100%);
+    }
+
+    .item-all-card {
+        position: relative;
+        padding: 1.5rem 1.5rem;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        color: $white;
+    }
+
+    .category-type .item-all-card img {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        padding: 2.3rem 0;
+    }
+
+    .row .item-all-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .item-all-card a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+}
+
+.iteam-all-icon i {
+    font-size: 1.5rem;
+}
+
+.item-all-card img.imag-service {
+    width: 40%;
+}
+
+.carousel-indicators li.active {
+    color: $white;
+    background: $secondary5;
+}
+
+.item-cards7-ic.realestate-list li a:hover {
+    color: $secondary5;
+}
+
+.item1-links a {
+    &:hover {
+        color: $secondary5;
+    }
+
+    &.active {
+        background: #f6f6fb;
+        border-right: 2px solid $secondary5;
+    }
+}
+
+.settings-tab .tabs-menu li a.active {
+    background: #f7f7fb;
+}
+
+.ads-tabs .tabs-menus ul li .active {
+    background: $secondary5;
+    color: $white;
+    border-radius: 4px;
+    border: 1px solid $secondary5;
+}
+
+.showmore-button-inner {
+    border: 1px solid $secondary5;
+    color: $secondary5;
+}
+
+.owl-nav button,
+.owl-carousel:hover .owl-nav button {
+    color: $primary7 !important;
+}
+
+.owl-nav>div i {
+    color: $secondary5;
+}
+
+.tabs-menu ul.eductaional-tabs li .active {
+    background: $secondary5;
+}
+
+.register-right .nav-tabs .nav-link:hover {
+    background: #efeff5;
+    color: #495057;
+}
+
+.gradient-icon {
+    background: linear-gradient(120deg, #3ba2ff 0%, $secondary5 100%);
+}
+
+.axgmap-img {
+    border: 3px solid $secondary5;
+}
+
+.horizontalMenu>.horizontalMenu-list>li {
+    > {
+        .horizontal-megamenu .menu_form input {
+
+            &[type="submit"],
+            &[type="button"] {
+                background-color: $secondary5;
+                color: $white;
+            }
+        }
+
+        a.active {
+            background-color: rgba(255, 255, 255, 0.15);
+            color: $white;
+        }
+    }
+
+    &:hover>a {
+        background-color: $secondary5;
+        color: $white !important;
+
+        .fa {
+            background-color: $secondary5;
+            color: $white !important;
+        }
+    }
+
+    >ul.sub-menu>li {
+        &:hover>a {
+            background-color: $secondary5;
+            color: $white;
+        }
+
+        >ul.sub-menu>li {
+
+            &:hover>a,
+            >ul.sub-menu>li:hover a {
+                background-color: $secondary5;
+                color: $white;
+            }
+        }
+    }
+}
+
+code {
+    color: $primary7;
+}
+
+#gdpr-cookie-message {
+
+    h4,
+    h5 {
+        color: $secondary5;
+    }
+
+    a {
+        color: $secondary5;
+        border-bottom: 1px solid $secondary5;
+
+        &:hover {
+            border-bottom: 1px solid $secondary5;
+            transition: all 0.3s ease-in;
+            color: $secondary5;
+        }
+    }
+}
+
+button#gdpr-cookie-advanced {
+    color: $white;
+    background-color: $secondary5 !important;
+}
+
+.ui-widget-header,
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    background: $secondary5;
+}
+
+.side-menu li a.active:before {
+    background: linear-gradient(120deg, $secondary5 60%, #2ddcd3 100%);
+    box-shadow: 0px 0px 14px 0px $secondary5;
+}
+
+.app-sidebar {
+    .side-menu__item.active {
+        color: $primary7 !important;
+
+        &:hover {
+            color: $primary7 !important;
+        }
+    }
+
+    .side-menu li {
+
+        &.active>a,
+        a.active {
+            color: $primary7;
+        }
+    }
+
+    .slide-menu li.active>a {
+        color: $primary7;
+    }
+
+    .side-menu li {
+
+        ul li a:hover,
+        a:hover,
+        &.active>a,
+        a.active {
+            color: $primary7;
+        }
+    }
+
+    .slide-menu li.active>a,
+    .side-menu li a:hover {
+        color: $primary7;
+    }
+}
+
+.side-menu li a.active:before {
+    background: linear-gradient(120deg, $secondary5 60%, #2ddcd3 100%);
+    box-shadow: 0px 0px 14px 0px $secondary5;
+}
+
+.navtab-wizard.nav-tabs .nav-link {
+
+    &.active,
+    &:hover {
+        color: #605e7e;
+        background: #f7f7fb;
+    }
+}
+
+.form-inline .nav-search .btn {
+    border: 2px solid $primary7;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.wrapper>h1 span {
+    border-bottom: 2px solid $secondary5;
+    color: $secondary5;
+}
+
+.tab_wrapper {
+    >ul li.active {
+        border-color: $secondary5;
+        background: $secondary5;
+        color: $white;
+    }
+
+    .controller span {
+        background: $secondary5;
+    }
+
+    .content_wrapper .accordian_header.active {
+        color: $secondary5;
+
+        &:after {
+            background: $secondary5;
+        }
+
+        .arrow {
+            border-top: 3px solid $secondary5;
+            border-left: 3px solid $secondary5;
+        }
+    }
+
+    &.left_side>ul li.active:after,
+    &.right_side>ul li.active:after {
+        background: $secondary5;
+    }
+}
+
+.addui-slider .addui-slider-track {
+
+    .addui-slider-range,
+    .addui-slider-handle:after {
+        background: $secondary5;
+    }
+}
+
+.accordionjs .acc_section.acc_active>.acc_head {
+    background: $secondary5;
+}
+
+.perfect-datetimepicker tbody td.selected {
+    border: 1px solid $secondary5;
+    background-color: $secondary5;
+}
+
+div.conv-form-wrapper div {
+    &.options div.option {
+        border: 1px solid $secondary5;
+        color: $secondary5;
+    }
+
+    &#messages div.message.from {
+        background: $secondary5;
+    }
+
+    &.options div.option.selected {
+        background: $secondary5;
+        color: $white;
+    }
+}
+
+form.convFormDynamic button.submit {
+    border: 1px solid $secondary5;
+    background: $secondary5;
+
+    &:hover {
+        background: $secondary5;
+        color: $white;
+    }
+}
+
+.exzoom {
+    .exzoom_nav .exzoom_nav_inner span.current {
+        border: 1px solid $secondary5;
+    }
+
+    .exzoom_btn a {
+        /*border: 1px solid $secondary5   ;*/
+        color: $secondary5;
+    }
+}
+
+.prev:hover,
+.next:hover {
+    color: $secondary5 !important;
+}
+
+.g_f-s {
+    .prev:hover i {
+        transform: translate(-5px, 0px);
+        color: $secondary5;
+    }
+
+    .next:hover i {
+        transform: translate(5px, 0px);
+        color: $secondary5;
+    }
+
+    .close-button>*:hover {
+        color: $secondary5;
+    }
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .link-list li a:hover {
+    color: $secondary5;
+}
+
+.register {
+    background: linear-gradient(120deg, #4f4ac7 0%, $secondary5 100%);
+}
+
+.btnRegister {
+    background: $secondary5;
+}
+
+.register .nav-tabs .nav-link.active {
+    color: $secondary5;
+    border: 1px solid $secondary5;
+}
+
+.pretty {
+
+    input:checked~.state.p-secondary label:after,
+    &.p-toggle .state.p-secondary label:after {
+        background-color: $secondary5 !important;
+    }
+
+    input:checked~.state.p-secondary-o label:before,
+    &.p-toggle .state.p-secondary-o label:before {
+        border-color: $secondary5;
+    }
+
+    input:checked~.state.p-secondary-o {
+
+        .icon1,
+        .svg,
+        svg {
+            color: $secondary5;
+            stroke: $secondary5;
+        }
+    }
+
+    &.p-toggle .state.p-secondary-o {
+
+        .icon1,
+        .svg,
+        svg {
+            color: $secondary5;
+            stroke: $secondary5;
+        }
+    }
+
+    &.p-default:not(.p-fill) input:checked~.state.p-secondary-o label:after {
+        background-color: $secondary5 !important;
+    }
+
+    &.p-switch {
+        input:checked~.state.p-secondary:before {
+            border-color: $secondary5;
+        }
+
+        &.p-fill input:checked~.state.p-secondary:before {
+            background-color: $secondary5 !important;
+        }
+    }
+}
+
+.owl-carousel button.owl-dot {
+    background: rgba(4, 81, 88, 0.1) !important;
+
+    &.active {
+        background: $primary7 !important;
+    }
+}
+
+.bg-background {
+    &:before {
+        background: linear-gradient(87deg, rgba(4, 81, 88, 0.85), rgba(9, 131, 142, 0.85) 100%) !important;
+    }
+
+    &.bg-background-video:before {
+        background: linear-gradient(135deg, rgba(4, 81, 88, 0.5) 0%, rgba(60, 72, 187, 0.5) 100%);
+    }
+}
+
+.bg-background2 {
+    &:before {
+        background: linear-gradient(87deg, rgba(4, 81, 88, 0.85), rgba(9, 131, 142, 0.85) 100%) !important;
+    }
+
+    &.white-transparent:before {
+        background: $black-5 !important;
+    }
+}
+
+.bg-background-color:before,
+.bg-background3:before,
+.bg-background-5:before,
+.bg-background-6:before,
+.slider-header:before {
+    background: linear-gradient(87deg, rgba(4, 81, 88, 0.85), rgba(9, 131, 142, 0.85) 100%) !important;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    box-shadow: 0 0 0 2px rgba(105, 99, 255, 0.25);
+}
+
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: 0 0 0 1px #f9faff, 0 0 0 2px rgba(105, 99, 255, 0.25);
+}
+
+.custom-file-input:focus~.custom-file-label {
+    box-shadow: 0 0 0 2px rgba(105, 99, 255, 0.25);
+}
+
+.custom-range {
+
+    &::-webkit-slider-thumb:focus,
+    &::-moz-range-thumb:focus,
+    &::-ms-thumb:focus {
+        outline: none;
+        box-shadow: 0 0 0 1px #f9faff, 0 0 0 2px rgba(105, 99, 255, 0.25);
+    }
+}
+
+.error-img .form-control:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(105, 99, 255, 0.25);
+}
+
+.selectize-input.focus {
+    border-color: $blue;
+    box-shadow: 0 0 0 2px rgba(105, 99, 255, 0.25);
+}
+
+.item-card7-imgs:hover a {
+    background: linear-gradient(-225deg, rgba(4, 81, 88, 0.7) 0%, rgba(121, 24, 242, 0.7) 48%, rgba(172, 50, 228, 0.7) 100%);
+}
+
+.app-sidebar .side-menu__item.active {
+    background: #f7f7fb !important;
+
+    &:hover {
+        background: #f7f7fb !important;
+    }
+}
+
+.app-sidebar-footer {
+    background: linear-gradient(87deg, rgba(4, 81, 88, 0.85), rgba(9, 131, 142, 0.85) 100%);
+}
+
+.app-header-background {
+    background: linear-gradient(87deg, rgb(4, 81, 88), rgb(9, 131, 142) 100%);
+
+    &.app-header-background2 {
+        background: linear-gradient(87deg, rgb(4, 81, 88), rgb(9, 131, 142) 100%);
+    }
+}
+
+.masthead .masthead-bg {
+    background: linear-gradient(87deg, rgba(4, 81, 88, 0.85), rgba(9, 131, 142, 0.85) 100%) !important;
+}
+
+@media (max-width: 992px) {
+    .search-show .nav-search {
+        background: linear-gradient(87deg, rgba(4, 81, 88, 0.85), rgba(9, 131, 142, 0.85) 100%);
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-item.with-sub .sub-item {
+        border-top: 2px solid $secondary5;
+    }
+}
+
+@media (max-width: 480px) {
+    .zoom-container .arrow-ribbon2:before {
+        border-top: 17px solid transparent;
+        border-left: 17px solid $secondary5;
+        border-bottom: 17px solid transparent;
+    }
+}
+
+.bg-primary {
+    background-color: $primary7 !important;
+}
+
+a.bg-primary {
+
+    &:hover,
+    &:focus {
+        background-color: $primary7 !important;
+    }
+}
+
+button.bg-primary {
+
+    &:hover,
+    &:focus {
+        background-color: $primary7 !important;
+    }
+}
+
+.btn-primary {
+    color: $white;
+    background-color: $primary7;
+    border-color: $primary7;
+
+    &:hover {
+        color: $white;
+        background-color: $primary7;
+        border-color: $primary7;
+    }
+
+    &:focus,
+    &.focus {
+        box-shadow: 0 0 0 2px rgba(47, 12, 108, 0.5);
+    }
+
+    &.disabled,
+    &:disabled {
+        color: $white;
+        background-color: $primary7;
+        border-color: $primary7;
+    }
+
+    &:not(:disabled):not(.disabled) {
+
+        &:active,
+        &.active {
+            color: $white;
+            background-color: $primary7;
+            border-color: $primary7;
+        }
+    }
+}
+
+.show>.btn-primary.dropdown-toggle {
+    color: $white;
+    background-color: $primary7;
+    border-color: $primary7;
+}
+
+.btn-primary:not(:disabled):not(.disabled) {
+
+    &:active:focus,
+    &.active:focus {
+        box-shadow: 0 0 0 2px rgba(47, 12, 108, 0.5);
+    }
+}
+
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 2px rgba(47, 12, 108, 0.5);
+}
+
+.bg-linkedin {
+    background: #0077b5;
+}
+
+.bg-facebook {
+    background: #3C5A99;
+}
+
+.accent-2 {
+    border-top: 2px solid $secondary5;
+}
+
+.header-main i {
+    color: $secondary5;
+}
+
+.item-card {
+    .item-card-desc {
+        &:before {
+            background: rgba(40, 35, 47, 0);
+        }
+
+        .item-card-text {
+            background: linear-gradient(rgba(40, 35, 47, 0.4) 10%, rgba(40, 35, 47, 0.95));
+            transition: all .5s;
+        }
+    }
+
+    &:hover .item-card-desc .item-card-text {
+        background: linear-gradient(rgba(40, 35, 47, 0.5) 10%, rgba(40, 35, 47, 0.95)) !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .sticky-wrapper.is-sticky .horizontalMenu>.horizontalMenu-list>li>a.active {
+        background-color: $secondary5;
+        color: $white;
+    }
+}
+
+.btn-orange {
+    color: $white;
+    background-color: #e67605;
+    border-color: #e67605;
+}
+
+.item-card7-imgs:hover a {
+    background: transparent;
+}
+
+.arrow-ribbon.bg-primary:before {
+    border-left: 15px solid $primary7;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: $secondary5;
+    color: $white;
+}
+
+.sticky-wrapper.relative.banners .horizontalMenu>.horizontalMenu-list>li {
+
+    >a.active,
+    &:hover>a {
+        background-color: $secondary5;
+    }
+}
+
+.pricingTable2.pink .pricing-plans {
+    background-color: $secondary5;
+}
+
+.pricingTable {
+    .title:after {
+        border-left: 26px solid rgba(236, 41, 107, 0.1);
+    }
+
+    &:hover,
+    &.advance-pricing {
+        border: 1px solid rgb(236, 41, 107);
+    }
+
+    &:hover .title {
+        background: $secondary5;
+    }
+}
+
+.construction-image:before {
+    content: '';
+    background: rgba(41, 5, 134, 0.88);
+}
+
+.construction {
+    z-index: 1;
+}
+
+.countdown-timer-wrapper .timer .timer-wrapper .time {
+    color: $secondary5;
+    background: rgb(255, 255, 255);
+}
+
+.pricingTable {
+    &:hover .pricingTable-signup {
+        background: $secondary5;
+        color: $white;
+    }
+
+    .pricingTable-signup {
+        background: rgba(236, 41, 107, 0.12);
+        color: $secondary5;
+    }
+
+    &:hover .title {
+        background: $secondary5;
+        color: $white;
+    }
+
+    &.advance-pricing {
+        border: 1px solid $secondary5;
+    }
+
+    &:hover {
+        border: 1px solid $secondary5;
+
+        .title {
+            &:before {
+                border-right-color: $secondary5;
+            }
+
+            &:after {
+                border-left-color: $secondary5;
+            }
+        }
+    }
+
+    .title {
+        &:before {
+            content: "";
+            border-right: 26px solid rgba(236, 41, 107, 0.1);
+        }
+
+        &:after {
+            content: "";
+            border-right: 26px solid rgba(236, 41, 107, 0.1);
+            border-right: none;
+            border-left: 26px solid rgba(236, 41, 107, 0.1);
+        }
+
+        background: rgba(236,
+            41,
+            107,
+            0.1);
+        color: $secondary5;
+    }
+}
+
+.construction-image:before {
+    background: linear-gradient(87deg, rgba(4, 81, 88, 0.85), rgba(9, 131, 142, 0.85) 100%) !important;
+}
+
+@media (max-width: 991px) {
+    .horizontalMenu>.horizontalMenu-list>li>a.active {
+        background-color: $secondary5;
+        color: $white;
+    }
+}
+
+.bg-card-light:hover {
+    border-color: $secondary5;
+}
+
+.bg-card {
+    &:hover {
+        background: $secondary5;
+        color: $white;
+    }
+
+    .cat-img i {
+        color: $secondary5;
+    }
+
+    &:hover {
+        .cat-img i {
+            color: $white;
+        }
+
+        .bg-secondary {
+            background-color: $white !important;
+            color: $secondary5 !important;
+
+            i {
+                color: $secondary5 !important;
+            }
+        }
+    }
+}
+
+.sticky-wrapper.absolute.banners .horizontalMenu>.horizontalMenu-list>li>a.active {
+    background-color: $secondary5;
+    color: $white !important;
+}
+
+.category-svg svg {
+    g {
+        fill: $primary7;
+    }
+
+    fill: $primary7;
+}
+
+.logo-svg svg {
+    fill: $primary7;
+
+    g {
+        fill: $primary7;
+    }
+}
+
+.service-card-svg svg {
+    fill: $primary7;
+}
+
+.category-svg {
+    &:after {
+        background: rgba(4, 81, 88, 0.02);
+    }
+
+    background: rgba(4,
+        81,
+        88,
+        0.04);
+}
+
+.breadcrumb-item.active,
+.perfect-datetimepicker table td.weekend,
+.invalid-feedback {
+    color: $secondary5;
+}
+
+.custom-select.is-invalid,
+.form-control.is-invalid {
+    border-color: $secondary5;
+}
+
+.was-validated {
+
+    .custom-select:invalid,
+    .form-control:invalid {
+        border-color: $secondary5;
+    }
+}
+
+.custom-select.is-invalid:focus,
+.form-control.is-invalid:focus {
+    border-color: $secondary5;
+    box-shadow: 0 0 0 2px rgba(205, 32, 31, 0.25);
+}
+
+.was-validated {
+
+    .custom-select:invalid:focus,
+    .form-control:invalid:focus {
+        border-color: $secondary5;
+        box-shadow: 0 0 0 2px rgba(205, 32, 31, 0.25);
+    }
+}
+
+.form-check-input.is-invalid~.form-check-label,
+.was-validated .form-check-input:invalid~.form-check-label,
+.custom-control-input.is-invalid~.custom-control-label,
+.was-validated .custom-control-input:invalid~.custom-control-label {
+    color: $secondary5;
+}
+
+.custom-file-input.is-invalid~.custom-file-label,
+.was-validated .custom-file-input:invalid~.custom-file-label {
+    border-color: $secondary5;
+}
+
+@media (min-width: 992px) {
+    .sticky-wrapper.is-sticky .horizontalMenu>.horizontalMenu-list>li>a.active {
+        background-color: $secondary5;
+        color: $white;
+    }
+}
+
+.header-btn.has-new:before {
+    background: $secondary5;
+}
+
+.accent-2 {
+    border-top: 2px solid $secondary5;
+}
+
+.item-card7-overlaytext h4,
+.item-card8-overlaytext h6 {
+    background: $secondary5;
+}
+
+@media (max-width: 991px) {
+    .horizontalMenu>.horizontalMenu-list>li>a.active {
+        background-color: $secondary5;
+        color: $white;
+    }
+}
+
+.sticky-wrapper.absolute.banners .horizontalMenu>.horizontalMenu-list>li {
+
+    &:hover>a,
+    >a.active {
+        background-color: $secondary5;
+        color: $white !important;
+    }
+}
+
+.ribbon-1 {
+    &:after {
+        border-top: 13px solid $secondary5;
+    }
+
+    span {
+        background: $secondary5;
+
+        &:before,
+        &:after {
+            background: $secondary5;
+        }
+    }
+}
+
+.header-main i {
+    color: $secondary5;
+}
+
+.pricingTable {
+    .title {
+        background: rgba(233, 30, 99, 0.1);
+        color: $secondary5;
+    }
+
+    &:hover .title {
+        background: $secondary5;
+        color: $white;
+        box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.2), 0 2px 9px 0 rgba(62, 57, 107, 0.2);
+    }
+
+    &.advance-pricing {
+        border: 1px solid $secondary5;
+    }
+
+    &:hover {
+        border: 1px solid $secondary5;
+
+        .title {
+            &:before {
+                border-right-color: $secondary5;
+            }
+
+            &:after {
+                border-left-color: $secondary5;
+            }
+        }
+    }
+
+    .pricingTable-signup {
+        background: rgba(233, 30, 99, 0.1);
+        color: $secondary5;
+    }
+
+    &:hover .pricingTable-signup {
+        background: $secondary5;
+        color: $white;
+    }
+}
+
+.pricingTable2.pink .pricing-plans {
+    background-color: $secondary5;
+}
+
+.bg-card-light:hover {
+    box-shadow: 0 0 40px 0 rgba(152, 154, 158, 0.5);
+    background: $white;
+    border-color: $secondary5;
+}
+
+.bg-card {
+    &:hover {
+        box-shadow: 0 0 40px 0 rgba(152, 154, 158, 0.5);
+        background: $secondary5;
+        color: $white;
+    }
+
+    .cat-img i {
+        color: $secondary5;
+    }
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: $white;
+    border-color: $primary7;
+    background-color: $primary7;
+    color: $white;
+    border-color: $primary7;
+    background-color: $primary7;
+}
+
+.bg-secondary-transparent {
+    background-color: rgba(236, 41, 107, 0.1);
+}
+
+.bg-primary-transparent {
+    background-color: rgba(4, 81, 88, 0.1);
+}
+
+.badge-primary {
+    color: $white;
+    background-color: $primary7;
+
+    &[href] {
+
+        &:focus,
+        &:hover {
+            color: $white;
+            text-decoration: none;
+            background-color: $primary7;
+        }
+    }
+}
+
+.modal-header .close.btn {
+    background-color: $primary7;
+    border-color: $primary7;
+}
+
+.bg-primary {
+    background-color: $primary7 !important;
+}
+
+a.bg-primary {
+
+    &:focus,
+    &:hover {
+        background-color: $primary7 !important;
+    }
+}
+
+button.bg-primary {
+
+    &:focus,
+    &:hover {
+        background-color: $primary7 !important;
+    }
+}
+
+.text-primary {
+    color: $primary7 !important;
+}
+
+a.text-primary {
+
+    &:focus,
+    &:hover {
+        color: $primary7 !important;
+    }
+}
+
+.arrow-ribbon.bg-primary:before {
+    border-left: 15px solid $primary7;
+}
+
+#gdpr-cookie-message button,
+button#ihavecookiesBtn {
+    background: $primary7;
+}
+
+.ribbon-2 {
+    &:after {
+        border-top: 13px solid $primary7;
+    }
+
+    span {
+        background: $primary7;
+
+        &:before,
+        &:after {
+            background: $primary7;
+        }
+    }
+}
+
+.pricingTable2.blue .pricing-plans {
+    background-color: $primary7;
+}
+
+.btn-primary {
+    color: $white !important;
+    background-color: $primary7;
+    border-color: $primary7;
+
+    &:hover {
+        color: $white;
+        background-color: $primary7;
+        border-color: $primary7;
+    }
+
+    &.focus,
+    &:focus {
+        box-shadow: 0 0 0 2px rgba(4, 81, 88, 0.53);
+    }
+
+    &.disabled,
+    &:disabled {
+        color: $white;
+        background-color: $primary7;
+        border-color: $primary7;
+    }
+
+    &:not(:disabled):not(.disabled) {
+
+        &.active,
+        &:active {
+            color: $white;
+            background-color: $primary7;
+            border-color: $primary7;
+        }
+    }
+}
+
+.show>.btn-primary.dropdown-toggle {
+    color: $white;
+    background-color: $primary7;
+    border-color: $primary7;
+}
+
+.btn-primary:not(:disabled):not(.disabled) {
+
+    &.active:focus,
+    &:active:focus {
+        box-shadow: 0 0 0 2px rgba(4, 81, 88, 0.26);
+    }
+}
+
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 2px rgba(4, 81, 88, 0.26);
+}
+
+.pattern-1 {
+    background: linear-gradient(87deg, rgba(4, 81, 88, 0.85), rgba(9, 131, 142, 0.85) 100%), url(../images/products/products/img04.jpg) center;
+    border-radius: 5px;
+}
+
+.item-card2-icons a:hover {
+    background: $secondary5;
+}
+
+.header-style03 .horizontalMenu>.horizontalMenu-list>li>a.active,
+.item-card7-icons a:hover {
+    background-color: $secondary5;
+    color: $white;
+}
+
+.header-style-04 {
+    background: linear-gradient(87deg, rgb(4, 81, 88), rgb(9, 131, 142) 100%) !important;
+}
+
+.xdsoft_autocomplete .xdsoft_autocomplete_dropdown>div.active {
+    background: rgba(4, 81, 88, 0.1);
+}
+
+.footer-btn-outline:hover {
+    border: 1px solid $secondary5;
+    background-color: $secondary5;
+    color: $white !important;
+}
+
+.label-primary {
+    background-color: $secondary5;
+    color: $white;
+}
+
+.label.label-primary {
+
+    &.arrowed-in:before,
+    &.arrowed:before {
+        border-right-color: $secondary5;
+    }
+}
+
+.user-tabs ul li a.active {
+    background: $primary7;
+    color: $white;
+}
+
+.alert-primary {
+    color: $white-9;
+    background-color: $primary7;
+    border-color: $primary7;
+}
+
+.btn.dropdown-toggle.btn-primary~.dropdown-menu .dropdown-plus-title {
+    border-color: $primary7 !important;
+}
+
+.sub-newsletter.d-sm-flex i {
+    color: $secondary5;
+}
+
+.horizontalMenu>.horizontalMenu-list>li> {
+
+    ul.sub-menu>li.active a,
+    .horizontal-megamenu .link-list li.active a {
+        color: $secondary5;
+    }
+}

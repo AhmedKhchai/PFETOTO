@@ -1,0 +1,71 @@
+.fc-toolbar:before,
+.login-content:after {
+	content: "";
+}
+
+.mf-date {
+	display: block;
+	margin-top: 7px;
+	>i {
+		font-size: 14px;
+		line-height: 100%;
+		position: relative;
+		top: 1px;
+	}
+}
+
+.msb-reply {
+	position: relative;
+	margin-top: 3px;
+	background: $white;
+	padding: 10px;
+	border-radius: 0 7px 7px 7px;
+}
+
+.four-zero,
+.lc-block {
+	box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+}
+
+.fc-unthemed {
+	.fc-content,
+	.fc-divider,
+	.fc-list-heading td,
+	.fc-list-view,
+	.fc-popover,
+	.fc-row,
+	tbody,
+	td,
+	th,
+	thead {
+		border-color: rgba(227, 237, 252, 1);
+	}
+}
+
+.fc-event {
+	border: 1px solid #e0e5f3;
+}
+
+.fc-unthemed {
+	.fc-divider,
+	.fc-list-heading td,
+	.fc-popover .fc-header {
+		background: #f7f7fb;
+	}
+}
+
+.fc-toolbar {
+	.fc-state-active,
+	.ui-state-active {
+		background: #09acca;
+	}
+}
+
+.fc-today-button fc-button fc-state-default fc-corner-left fc-corner-right fc-state-disabled:focus {
+	border: none !important;
+	box-shadow: none !important;
+}
+
+.fc-unthemed .fc-list-item:hover td {
+	background-color: #f7f7fb;
+}

@@ -1,0 +1,81 @@
+@media (min-width: 992px) and (max-width: 1359px) {
+	.map-content-width {
+		width: 80%;
+	}
+	.map-width {
+		width: 20%;
+	}
+	.gmnoprint {
+		display: none;
+	}
+}
+
+@media (min-width: 1360px) {
+	.map-content-width {
+		width: 60%;
+	}
+	.map-width {
+		width: 40%;
+	}
+}
+
+.map-content-width {
+	.mCSB_inside>.mCSB_container {
+		margin-right: 0;
+	}
+	.mCSB_scrollTools {
+		.mCSB_dragger .mCSB_dragger_bar {
+			float: right;
+		}
+		.mCSB_draggerRail {
+			display: none !important;
+		}
+		.mCSB_dragger .mCSB_dragger_bar {
+			background: $black-3 !important;
+			&:hover {
+				background: $black-5 !important;
+			}
+		}
+	}
+}
+
+.map-header1 {
+	margin-bottom: 1.5rem;
+	height: 23.2rem;
+	position: relative;
+	margin-bottom: -1.5rem;
+	border: 1px solid #e0e5f3;
+}
+
+@media (max-width: 992px) and (min-width: 767px) {
+	.map-width {
+		display: contents;
+	}
+}
+
+.map-absolute {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 30px;
+	border-bottom: 0 !important;
+}
+
+@media (max-width: 1200px) {
+	.map-absolute {
+		left: 25px;
+		right: 25px;
+	}
+}
+
+.map-listing {
+	padding-top: 5.5rem;
+	.map-width-height .axgmap {
+		min-height: 92vh;
+	}
+}
+
+.map-details-content {
+	max-height: 92vh;
+	padding-bottom: 6rem;
+}
