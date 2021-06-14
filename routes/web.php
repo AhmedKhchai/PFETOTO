@@ -13,18 +13,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('Mainlogin');
-});
-Route::get('logout', '\App\Http\Controllers\AdminDashboardController@logout');
+    Route::get('/', 'App\Http\Controllers\ArticleController@index')->name('home');
+    Route::get('/article/{article}', 'App\Http\Controllers\ArticleController@show')->name('home');
+    Route::post('/article/{article}', 'App\Http\Controllers\commentController@store')->name('home');
+    Route::delete('/article/{article}', 'App\Http\Controllers\commentController@store')->name('home');
 
-Route::group(['middleware' => ['auth']], function () {
-    Route::get('/dashboard', 'App\Http\Controllers\AdminDashboardController@index')->name('dashboard');
-});
-Route::group(['middleware' => ['auth','role:superadministrator']], function () {
-    Route::get('/dashboard/addArticle', 'App\Http\Controllers\ArticleController@create')->name('dashboard.addArticle');
-    Route::post('/dashboard/addArticle', 'App\Http\Controllers\ArticleController@store')->name('dashboard.addArticle');
-});
+    Route::get('/loginregister', function () {
+        return view('Mainlogin');
+    });
+    
+
+    
+    // Route::group(['middleware' => ['auth','role:user']], function () {
+
+    // });
+    
+    Route::group(['middleware' => ['auth','role:superadministrator']], function () {
+        Route::get('/dashboard', 'App\Http\Controllers\AdminDashboardController@index')->name('dashboard');
+        Route::get('/dashboard/addArticle', 'App\Http\Controllers\ArticleController@create')->name('dashboard.addArticle');
+        Route::post('/dashboard/addArticle', 'App\Http\Controllers\ArticleController@store')->name('dashboard.addArticle');
+    });
+    Route::get('logout', '\App\Http\Controllers\AdminDashboardController@logout');
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');

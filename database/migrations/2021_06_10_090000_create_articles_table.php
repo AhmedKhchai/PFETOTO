@@ -15,19 +15,20 @@ class CreateArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
-             $table->string('titre')->unique();
+            $table->string('titre')->unique();
             $table->text('categorie');
             $table->string('adresse');
-            $table->string('phone');	
+            $table->string('phone');
             $table->boolean('weekdays')->nullable();
             $table->boolean('weekends')->nullable();
             $table->string('heuresouverture');
             $table->string('heuresfermeture');
-            $table->longText('description');	
-            $table->string('nom')->nullable();;
-            $table->string('email')->nullable();;
-            $table->bigInteger('telephoneperso')->nullable();;
-            $table->string('adresseperso')->nullable();;
+            $table->longText('description');
+            $table->longText('image');
+            $table->string('nom')->nullable();
+            $table->string('email')->nullable();
+            $table->bigInteger('telephoneperso')->nullable();
+            $table->string('adresseperso')->nullable();
             $table->string('facebookurl')->nullable();
             $table->string('twitterurl')->nullable();
             $table->string('googleplusurl')->nullable();

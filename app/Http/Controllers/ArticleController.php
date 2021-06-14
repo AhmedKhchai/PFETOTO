@@ -14,6 +14,12 @@ class ArticleController extends Controller
      */
     public function index()
     {
+        $articles = Article::latest()->get();
+         
+        return view('welcome', compact('articles'));
+
+
+
         //
     }
 
@@ -69,9 +75,14 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Article $article)
     {
-        //
+        if (Auth()->check()) {
+            $comments = $article->comments;
+
+            return view('showArticle', compact('article', 'comments'));
+        }
+        return view('guestShow', compact('article'));
     }
 
     /**
@@ -119,6 +130,7 @@ class ArticleController extends Controller
              'heuresouverture'=>'required',
              'heuresfermeture'=>'required',
              'description'=>'required',
+             'image'=>'required',
              'nom'=>'nullable'
             ,'email'=>'nullable'
             ,'telephoneperso'=>'nullable'

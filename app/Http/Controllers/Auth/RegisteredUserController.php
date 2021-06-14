@@ -20,7 +20,7 @@ class RegisteredUserController extends Controller
      */
     public function create()
     {
-        return view('auth.register');
+        return view('loginregister');
     }
 
     /**
@@ -44,7 +44,7 @@ class RegisteredUserController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
-            // $user->attachRole('superadministrator');
+        // $user->attachRole('superadministrator');
 
         event(new Registered($user));
 

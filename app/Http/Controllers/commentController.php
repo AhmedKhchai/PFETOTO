@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use App\Models\Comment;
+use Auth;
 
-class AdminDashboardController extends Controller
+use Illuminate\Http\Request;
+
+class commentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,18 +17,7 @@ class AdminDashboardController extends Controller
      */
     public function index()
     {
-        // if (Auth::user()->hasRole('superadministrator')) {
-        //     $user = auth()->user();
-        //     $articles = Article::latest()->get();
-         
-        //     return view('adminDashboard', compact('user', 'articles'));
-        // } elseif (Auth::user()->hasRole('user')) {
-        //     return redirect('/');
-        // }
-        $user = auth()->user();
-        $articles = Article::latest()->get();
-         
-        return view('adminDashboard', compact('user', 'articles'));
+        //
     }
 
     /**
@@ -45,9 +36,20 @@ class AdminDashboardController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Article $article)
     {
         //
+        if (Auth()->check()) {
+            $comment = new Comment();
+            $comment->name = request('nom');
+            $comment->comment = request('comment');
+            $comment->article_id = $article->id ;
+            $comment->user_id = Auth::id();
+            $comment->save();
+            return redirect('/article/'.$article->id);
+        } else {
+            throw ValidationException::withMessages(['field_name' => 'You should be Logged in !']);
+        }
     }
 
     /**
@@ -94,10 +96,13 @@ class AdminDashboardController extends Controller
     {
         //
     }
-
-    public function logout(Request $request)
+    protected function validatedArticle()
     {
-        Auth::logout();
-        return redirect('/');
+        return request()->validate([
+             'nom'=>'required',
+             'comment'=>'required',
+            // 'user_id'=>'required',
+            // 'article_id'=>'required'
+         ]);
     }
 }
