@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use Illuminate\Http\Request;
+use DB;
 
 class ArticleController extends Controller
 {
@@ -142,5 +143,41 @@ class ArticleController extends Controller
             ,'anneefondation'=>'nullable'
             ,'categorieservice'=>'nullable'
          ]);
+    }
+    public function hotellist()
+    {
+        $articles = DB::table('articles')->where('categorie', 'Hotels,Salon & Spa')->get();
+        // $articles = Article::latest()->get();
+        // foreach ($articles as $article) {
+        //     $article['categorie']  = explode(', ', $article['categorie']) ;
+        // }
+
+        // return $articles;
+        return view('hotellist', compact('articles'));
+    }
+
+    public function salon()
+    {
+        $articles = DB::table('articles')->where('categorie', '')->get();
+
+        return view('salon', compact('articles'));
+    }
+    public function resto()
+    {
+        $articles = DB::table('articles')->where('categorie', '')->get();
+
+        return view('resto', compact('articles'));
+    }
+    public function cafe()
+    {
+        $articles = DB::table('articles')->where('categorie', '')->get();
+
+        return view('cafe', compact('articles'));
+    }
+    public function blg()
+    {
+        $articles = DB::table('articles')->where('categorie', '')->get();
+
+        return view('blg', compact('articles'));
     }
 }

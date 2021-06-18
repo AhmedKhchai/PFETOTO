@@ -18,6 +18,12 @@ use Illuminate\Support\Facades\Route;
     Route::post('/article/{article}', 'App\Http\Controllers\commentController@store')->name('home');
     Route::delete('/article/{article}', 'App\Http\Controllers\commentController@store')->name('home');
 
+    Route::get('/hotellist', 'App\Http\Controllers\ArticleController@hotellist')->name('hotel');
+Route::get('/salon', 'App\Http\Controllers\ArticleController@salon')->name('salon');
+Route::get('/resto', 'App\Http\Controllers\ArticleController@resto')->name('resto');
+Route::get('/cafe', 'App\Http\Controllers\ArticleController@cafe')->name('cafe');
+Route::get('/blg', 'App\Http\Controllers\ArticleController@blg')->name('blg');
+
     Route::get('/loginregister', function () {
         return view('Mainlogin');
     });

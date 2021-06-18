@@ -18,8 +18,8 @@
         content="business directory website,online business directory website,directory listing sites,bootstrap form template,bootstrap templates,responsive web design,bootstrap website templates,business directory,business directory template,business listing,buy web templates,directory,directory html template,directory listing html template,directory website template,html list template,html template,html5 responsive template,html5 template,local business directory,local business listing,online business directory,online directory,premium,premium bootstrap templates,small business directory,classified,Premium business directory Templates,Directory & Listing HTML Template,business listing websites" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    
- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     @livewireStyles
@@ -143,7 +143,7 @@
                             <a href="#">Categories <span class="fa fa-caret-down m-0"></span></a>
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="hotel-list.html">Hotels</a>
+                                    <a href="{{ route('hotel') }}">Hotels</a>
                                 </li>
                                 <li>
                                     <a href="salonspa-list.html">Salon & Spa</a>
@@ -164,16 +164,16 @@
                                 Contact Us <span class="wsarrow"></span></a>
                         </li>
                         @auth
-                        <li>
-                            <a href="/logout">Se Deconnecter <span class="wsarrow"></span>
-                            </a>
-                        </li>                            
+                            <li>
+                                <a href="/logout">Se Deconnecter <span class="wsarrow"></span>
+                                </a>
+                            </li>
                         @endauth
-                        @guest    
-                        <li>
-                            <a href="/loginregister">S'identifier <span class="wsarrow"></span>
-                            </a>
-                        </li>
+                        @guest
+                            <li>
+                                <a href="/loginregister">S'identifier <span class="wsarrow"></span>
+                                </a>
+                            </li>
                         @endguest
                     </ul>
                 </nav>
@@ -360,7 +360,7 @@
 
     <!-- Custom Js-->
     <script src="{{ asset('js/custom.js') }}"></script>
-        @livewireScripts
+    @livewireScripts
 
 </body>
 

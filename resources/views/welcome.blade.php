@@ -16,24 +16,24 @@
                                 <div class="form row no-gutters">
                                     <div class="form-group col-xl-4 col-lg-3 col-md-12 mb-0">
                                         <input type="text" class="
-                                                      form-control
-                                                      input-lg
-                                                      br-tr-md-0 br-br-md-0
-                                                      keywords-input
-                                                    " id="text4" placeholder="Phrase or Keywords" />
+                                                          form-control
+                                                          input-lg
+                                                          br-tr-md-0 br-br-md-0
+                                                          keywords-input
+                                                        " id="text4" placeholder="Phrase or Keywords" />
                                     </div>
                                     <div class="
-                                                    form-group
-                                                    col-xl-3 col-lg-3 col-md-12
-                                                    select2-lg
-                                                    mb-0
-                                                  ">
+                                                        form-group
+                                                        col-xl-3 col-lg-3 col-md-12
+                                                        select2-lg
+                                                        mb-0
+                                                      ">
                                         <select class="
-                                                      form-control
-                                                      select2-show-search
-                                                      border-bottom-0
-                                                      br-lg-0
-                                                    " data-placeholder="Select Category">
+                                                          form-control
+                                                          select2-show-search
+                                                          border-bottom-0
+                                                          br-lg-0
+                                                        " data-placeholder="Select Category">
                                             <optgroup label="Categories">
                                                 <option>Select Category</option>
                                                 <option value="0">All Categories</option>
@@ -48,9 +48,9 @@
                                     </div>
                                     <div class="col-xl-2 col-lg-3 col-md-12 mb-0">
                                         <a href="#" class="
-                                                      btn btn-lg btn-block btn-secondary
-                                                      br-tl-md-0 br-bl-md-0
-                                                    ">Recherche</a>
+                                                          btn btn-lg btn-block btn-secondary
+                                                          br-tl-md-0 br-bl-md-0
+                                                        ">Recherche</a>
                                     </div>
                                 </div>
                             </div>
@@ -80,8 +80,10 @@
                                 <a href="/article/{{ $article->id }}" class="absolute-link"></a>
                                 <img src="{{ $article->image }}" alt="img" class="cover-image" />
                                 <div class="item-card2-icons">
-                                    <a href="/article/{{ $article->id }}" class="item-card2-icons-l"><i class="fa fa-cutlery"></i></a>
-                                    <a href="/article/{{ $article->id }}" class="item-card2-icons-r"><i class="fa fa fa-heart-o"></i></a>
+                                    <a href="/article/{{ $article->id }}" class="item-card2-icons-l"><i
+                                            class="fa fa-cutlery"></i></a>
+                                    <a href="/article/{{ $article->id }}" class="item-card2-icons-r"><i
+                                            class="fa fa fa-heart-o"></i></a>
                                 </div>
                                 <div class="blog--category">{{ $article->categorie }}</div>
                             </div>
